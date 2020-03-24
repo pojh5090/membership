@@ -1,0 +1,17 @@
+127.0.0.1 - - [24/Mar/2020:18:14:48 +0900] "GET / HTTP/1.1" 404 750
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:14:50 +0900] "GET /UserChat/ HTTP/1.1" 200 261
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:21:56 +0900] "GET /UserChat/index.jsp HTTP/1.1" 200 1563
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:21:56 +0900] "GET /UserChat/css/bootstrap.css HTTP/1.1" 200 146010
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:21:56 +0900] "GET /UserChat/css/custom.css HTTP/1.1" 200 18
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:21:56 +0900] "GET /UserChat/js/bootstrap.js HTTP/1.1" 200 69707
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:22:06 +0900] "GET /UserChat/index.jsp HTTP/1.1" 200 1563
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:22:06 +0900] "GET /UserChat/js/bootstrap.js HTTP/1.1" 200 69707
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:22:06 +0900] "GET /UserChat/css/custom.css HTTP/1.1" 200 18
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:22:06 +0900] "GET /UserChat/css/bootstrap.css HTTP/1.1" 200 146010
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:22:07 +0900] "GET /favicon.ico HTTP/1.1" 404 761
+127.0.0.1 - - [24/Mar/2020:18:37:11 +0900] "GET / HTTP/1.1" 404 750
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:37:12 +0900] "GET /UserChat/index.jsp HTTP/1.1" 200 1563
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:37:12 +0900] "GET /UserChat/css/bootstrap.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:37:12 +0900] "GET /UserChat/css/custom.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:37:12 +0900] "GET /UserChat/js/bootstrap.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:37:39 +0900] "GET /UserChat/connection.jsp HTTP/1.1" 200 77

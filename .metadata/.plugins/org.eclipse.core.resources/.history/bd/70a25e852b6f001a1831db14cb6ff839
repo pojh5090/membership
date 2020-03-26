@@ -17,7 +17,7 @@
 				type: 'POST',
 				url: './UserRegisterCheckServlet',
 				data: {userID: userID},
-				success: function(result) {
+				success: fuction(result) {
 					if(result == 1) {
 						$('#checkMessage').html('사용할 수 있는 아이디입니다.');
 						$('#checkType').attr('class','modal-content panel-success');
@@ -142,9 +142,6 @@
 							<td sytle="width: 110px;"><h5>이메일</h5>
 							<td colspan="2"><input class="form-control" id="userEmail" type="email" name="userEmail" maxlength="20" placeholder="이메일을 입력하세요."></td>
 						</tr>
-						<tr>
-							<td style="text-align: left;" colspan="3"><h5 style="color: red;" id="passwordCheckMessage"></h5><input class="btn btn-primary pull-right" type="submit" value="등록"></td>
-						</tr>
 					</tbody>
 				</table>
 			</form>
@@ -156,7 +153,7 @@
 			}
 			String messageType = null;
 			if(session.getAttribute("messageType") != null) {
-				messageType = (String) session.getAttribute("messageType");
+				messageContent = (String) session.getAttribute("messageType");
 			}
 			if(messageContent != null) {
 		%>
@@ -169,7 +166,7 @@
 								<span aria-hidden="true">&times</span>
 								<span class="sr-only">Close</span>								
 							</button>
-							<h4 class="modal-title">
+							<h4 class-"modal-title">
 								<%= messageType %>
 							</h4>
 						</div>
@@ -200,7 +197,7 @@
 								<span aria-hidden="true">&times</span>
 								<span class="sr-only">Close</span>								
 							</button>
-							<h4 class="modal-title">
+							<h4 class-"modal-title">
 								확인 메시지
 							</h4>
 						</div>

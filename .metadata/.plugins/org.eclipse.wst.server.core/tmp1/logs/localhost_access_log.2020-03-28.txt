@@ -1,0 +1,13 @@
+127.0.0.1 - - [28/Mar/2020:23:01:51 +0900] "GET / HTTP/1.1" 404 747
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:01:52 +0900] "GET /UserChat/join.jsp HTTP/1.1" 200 6210
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:01:57 +0900] "POST /UserChat/UserRegisterCheckServlet HTTP/1.1" 200 1
+127.0.0.1 - - [28/Mar/2020:23:48:06 +0900] "GET / HTTP/1.1" 404 747
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:48:08 +0900] "GET /UserChat/connection.jsp HTTP/1.1" 200 81
+127.0.0.1 - - [28/Mar/2020:23:51:32 +0900] "GET / HTTP/1.1" 404 747
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:51:33 +0900] "GET /UserChat/join.jsp HTTP/1.1" 200 6210
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:51:38 +0900] "POST /UserChat/UserRegisterCheckServlet HTTP/1.1" 200 1
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:52:18 +0900] "GET /UserChat/join.jsp HTTP/1.1" 200 6210
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:52:19 +0900] "GET /UserChat/css/bootstrap.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:52:19 +0900] "GET /UserChat/css/custom.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:52:19 +0900] "GET /UserChat/js/bootstrap.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Mar/2020:23:52:22 +0900] "POST /UserChat/UserRegisterCheckServlet HTTP/1.1" 200 1

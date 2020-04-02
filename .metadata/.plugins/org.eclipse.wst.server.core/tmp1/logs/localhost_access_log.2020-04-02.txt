@@ -1,0 +1,6 @@
+127.0.0.1 - - [02/Apr/2020:19:48:57 +0900] "GET / HTTP/1.1" 404 747
+0:0:0:0:0:0:0:1 - - [02/Apr/2020:19:49:00 +0900] "GET /UserChat/chat.jsp HTTP/1.1" 200 4879
+0:0:0:0:0:0:0:1 - - [02/Apr/2020:19:49:00 +0900] "GET /UserChat/css/custom.css HTTP/1.1" 200 3642
+0:0:0:0:0:0:0:1 - - [02/Apr/2020:19:49:00 +0900] "GET /UserChat/css/bootstrap.css HTTP/1.1" 200 146010
+0:0:0:0:0:0:0:1 - - [02/Apr/2020:19:49:00 +0900] "GET /UserChat/js/bootstrap.js HTTP/1.1" 200 69707
+0:0:0:0:0:0:0:1 - - [02/Apr/2020:19:49:06 +0900] "GET /UserChat/login.jsp HTTP/1.1" 404 765

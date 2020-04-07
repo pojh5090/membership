@@ -62,6 +62,15 @@
 			});
 			$('#chatContent').val();
 		}
+		var lastID = 0;
+		function chatListFunction(type) {
+			var fromID = '<%= userID %>';
+			var toID = '<%= toID %>';
+			$.ajax({
+				type: "POST",
+				url:
+			});
+		}
 	</script>
 </head>
 <body>

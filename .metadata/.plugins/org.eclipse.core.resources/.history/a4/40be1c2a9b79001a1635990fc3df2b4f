@@ -1,7 +1,6 @@
 package chat;
 
 import java.io.IOException;
-import java.net.URLDecoder;
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -11,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/ChatListServlet")
+@WebServlet("/ChatSubmitServlet")
 public class ChatListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -25,10 +24,10 @@ public class ChatListServlet extends HttpServlet {
 		if(fromID == null || fromID.equals("") || toID == null || toID.equals("")
 				|| chatContent == null || chatContent.equals("") || listType == null || listType.equals("")) 
 			response.getWriter().write("");
-		else if (listType.equals("ten")) response.getWriter().write(getTen(URLDecoder.decode(fromID, "UTF-8"), URLDecoder.decode(toID, "UTF-8")));
+		else if (listType.equals("ten")) response.getWriter().write(getTen(fromID, toID));
 		else {
 			try {
-				response.getWriter().write(getID(URLDecoder.decode(fromID, "UTF-8"), URLDecoder.decode(toID, "UTF-8"), listType));
+				response.getWriter().write(getID(fromID, toID, listType));
 			} catch (Exception e) {
 				response.getWriter().write("");
 			}
@@ -42,9 +41,9 @@ public class ChatListServlet extends HttpServlet {
 		if(chatList.size() == 0) return "";
 		for(int i = 0; i < chatList.size(); i++) {
 			result.append("[{\"value\": \"" + chatList.get(i).getFromID() + "\"}," );
-			result.append("{\"value\": \"" + chatList.get(i).getToID() + "\"}," );
-			result.append("{\"value\": \"" + chatList.get(i).getChatContent() + "\"}," );
-			result.append("{\"value\": \"" + chatList.get(i).getChatTime() + "\"}]" );
+			result.append("[{\"value\": \"" + chatList.get(i).getToID() + "\"}," );
+			result.append("[{\"value\": \"" + chatList.get(i).getChatContent() + "\"}," );
+			result.append("[{\"value\": \"" + chatList.get(i).getChatTime() + "\"}]" );
 			if(i != chatList.size() -1) result.append(",");
 		}
 		result.append("], \"last\":\"" + chatList.get(chatList.size() -1).getChatID() + "\"}");
@@ -59,9 +58,9 @@ public class ChatListServlet extends HttpServlet {
 		if(chatList.size() == 0) return "";
 		for(int i = 0; i < chatList.size(); i++) {
 			result.append("[{\"value\": \"" + chatList.get(i).getFromID() + "\"}," );
-			result.append("{\"value\": \"" + chatList.get(i).getToID() + "\"}," );
-			result.append("{\"value\": \"" + chatList.get(i).getChatContent() + "\"}," );
-			result.append("{\"value\": \"" + chatList.get(i).getChatTime() + "\"}]" );
+			result.append("[{\"value\": \"" + chatList.get(i).getToID() + "\"}," );
+			result.append("[{\"value\": \"" + chatList.get(i).getChatContent() + "\"}," );
+			result.append("[{\"value\": \"" + chatList.get(i).getChatTime() + "\"}]" );
 			if(i != chatList.size() -1) result.append(",");
 		}
 		result.append("], \"last\":\"" + chatList.get(chatList.size() -1).getChatID() + "\"}");

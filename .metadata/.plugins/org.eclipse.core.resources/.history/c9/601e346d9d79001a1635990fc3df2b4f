@@ -107,7 +107,7 @@
 					'</div>' +
 					'</div>' +
 					'<hr>');
-			$('#chatList').scrollTop($('#chatList')[0].scrollHeight);
+			$('chatList').scrollTop($('#chatList')[0].scrollHeight);
  		}
 		function getInfiniteChat() {
 			setInterval(function() {
@@ -248,6 +248,7 @@
 		</div>
 		<script>
 			$('#messageModal').modal("show");
+
 		</script>
 		<% 
 			session.removeAttribute("messageContent");
